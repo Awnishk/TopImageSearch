@@ -17,9 +17,9 @@ Architecture : MVP
 support Library: androidX   
 
 #Installation
-For installing the app  
-1.clone this project repository 
-2. Open the project in android studio 
-3. Generate the apk file  
-4. run the apk in android mobile device 
+For installing the app    
+1.clone this project repository   
+2. Open the project in android studio   
+3. Generate the apk file    
+4. run the apk in android mobile device  
 
