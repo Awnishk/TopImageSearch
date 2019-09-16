@@ -14,6 +14,7 @@ Programming language: Kotlin
 Library for API call: Retrofit2
 Library for displaying image: Picasso
 Architecture : MVP
+support Library: androidX
 
 #Installation
 For installing the app 
