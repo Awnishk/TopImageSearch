@@ -9,7 +9,7 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name="com.attra.myimage.view.GalleryActivity">
+        <activity android:name="com.attra.searchimgurimage.view.GalleryActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
