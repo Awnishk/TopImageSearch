@@ -37,8 +37,9 @@ class GalleryAdapter(
         p0.view.title.text = imageDetails.title
 
         if ((imageDetails.images != null)) {
+
             p0.view.noOfImages.text = imageDetails.images.size.toString()
-            val myDate = SimpleDateFormat("dd/MM/yyyy  HH:mm:ss")
+            val myDate = SimpleDateFormat("dd/MM/yyyy  HH:mm")
                 .format(Date(imageDetails.datetime * 1000L))
             p0.view.imageDate.text = myDate.toString()
 
