@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+>
+
+    <androidx.appcompat.widget.LinearLayoutCompat android:layout_width="match_parent"
+                                                  android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:hint="Enter Text "
+                android:background="@drawable/rounded_red_border"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="2dp"
+                android:drawableLeft="@drawable/ic_search_black_24dp"
+                android:id="@+id/searchImages"
+        />
+        <Button android:layout_width="0dp"
+                android:layout_weight="1" android:layout_height="wrap_content"
+                android:id="@+id/searchButton"
+                android:text="Search"
+
+        />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:id="@+id/errorMessgae"
+              android:text="@string/error_no_result_found"
+              android:visibility="gone"
+              android:textColor="@color/red"
+              android:gravity="center"
+    />
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:id="@+id/recyclerView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

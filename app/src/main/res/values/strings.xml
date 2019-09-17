@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SearchImgurImage</string>
+    <string name="error_no_result_found">No Result Found</string>
+</resources>
