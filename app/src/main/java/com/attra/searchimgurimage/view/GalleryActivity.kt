@@ -7,9 +7,9 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.attra.myimage.adapter.GalleryAdapter
-import com.attra.myimage.service.ApiService
 import com.attra.searchimgurimage.R
+import com.attra.searchimgurimage.adapter.GalleryAdapter
+import com.attra.searchimgurimage.service.ApiService
 import kotlinx.android.synthetic.main.activity_gallery.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
