@@ -5,10 +5,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
->
+     >
 
-    <androidx.appcompat.widget.LinearLayoutCompat android:layout_width="match_parent"
-                                                  android:layout_height="wrap_content">
+    <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
         <androidx.appcompat.widget.AppCompatEditText
                 android:layout_width="0dp"
@@ -24,11 +25,13 @@
         <Button android:layout_width="0dp"
                 android:layout_weight="1" android:layout_height="wrap_content"
                 android:id="@+id/searchButton"
+                android:layout_gravity="center"
                 android:text="Search"
-
         />
+
     </androidx.appcompat.widget.LinearLayoutCompat>
-    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
               android:id="@+id/errorMessgae"
               android:text="@string/error_no_result_found"
               android:visibility="gone"
