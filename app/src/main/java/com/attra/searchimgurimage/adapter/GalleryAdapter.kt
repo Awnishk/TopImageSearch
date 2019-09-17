@@ -1,10 +1,9 @@
-package com.attra.myimage.adapter
+package com.attra.searchimgurimage.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.attra.myimage.model.Data
 import com.attra.searchimgurimage.R
@@ -37,19 +36,17 @@ class GalleryAdapter(
         val imageDetails = imageDetailsList[p1]
         p0.view.title.text = imageDetails.title
 
-        if ((imageDetails.images.size.toString()!=null) ){
+        if ((imageDetails.images != null)) {
             p0.view.noOfImages.text = imageDetails.images.size.toString()
+            val myDate = SimpleDateFormat("dd/MM/yyyy  HH:mm:ss")
+                .format(Date(imageDetails.datetime * 1000L))
+            p0.view.imageDate.text = myDate.toString()
 
+            Picasso
+                .with(context) // give it the context
+                .load(imageDetails.images[0].link) // load the image
+                .into(p0.view.photo)
         }
-
-        val myDate = SimpleDateFormat("dd/MM/yyyy  HH:mm:ss")
-            .format(Date(imageDetails.datetime * 1000L))
-        p0.view.imageDate.text= myDate.toString()
-
-        Picasso
-            .with(context) // give it the context
-            .load(imageDetails.images[0].link) // load the image
-            .into(p0.view.photo)
 
 
     }
